@@ -5,7 +5,6 @@ import json
 import sys
 import time
 
-from src.ingest import ingest
 from src.filter import filter_rows
 from src.reformat import reformat_and_write
 from src.stats import run as run_stats
@@ -68,6 +67,7 @@ def main() -> None:
     if args.input:
         rows = load_local_jsonl(args.input)
     else:
+        from src.ingest import ingest
         rows = ingest(split=args.split, max_samples=args.max_samples)
 
     if not rows:
