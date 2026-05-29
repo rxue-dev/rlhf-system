@@ -71,6 +71,9 @@ npm run dev
 
 Open http://localhost:5173, enter an annotator name, and label some pairs.
 
+<img width="1211" height="798" alt="Screenshot 2026-05-22 at 12 44 01 PM" src="https://github.com/user-attachments/assets/7a81f0f8-b0a0-4852-9dde-5e573e4d8e81" />
+<img width="747" height="491" alt="Screenshot 2026-05-22 at 12 43 22 PM" src="https://github.com/user-attachments/assets/635227f4-910a-40d1-98b8-336dabf9012d" />
+
 ### 2. Run the full pipeline on your annotations
 
 ```bash
@@ -84,6 +87,8 @@ pip install -r pipeline/requirements.txt
 cd pipeline
 python -m src.pipeline --split train --max_samples 5000
 ```
+
+<img width="535" height="971" alt="Screenshot 2026-05-29 at 3 00 13 PM" src="https://github.com/user-attachments/assets/8bf659b9-b999-48d8-a0b7-f9eab057f851" />
 
 ## Testing
 
